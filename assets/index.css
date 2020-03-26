@@ -202,7 +202,7 @@ html, body{
     color: blue;
 }
 
-.dropdown:hover .dropdown-content, .dropdownSearch:hover .dropdown-content, #drawer:hover .dropdown-content{
+.dropdown:hover .dropdown-content, .dropdownSearch:hover .dropdown-content{
     display: block;
 }
 
