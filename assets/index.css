@@ -205,3 +205,7 @@ html, body{
 .dropdown:hover .dropdown-content, .dropdownSearch:hover .dropdown-content, #drawer:hover .dropdown-content{
     display: block;
 }
+
+#searchBox{
+    font-size: 18px;
+}
