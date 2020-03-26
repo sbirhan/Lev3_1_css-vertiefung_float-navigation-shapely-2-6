@@ -1,0 +1,207 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    top: 0;
+    left: 0;
+    height: 12vh;
+    width: 100vw;
+    background-color: rgb(252, 252, 252);
+}
+
+.logoBox{
+    width: 25vw;
+    height: 12vh;
+    float: left;
+    text-align: center;
+    font: 20px Montserrat, sans-serif;
+    color: gray;
+    font-stretch: extra-condensed;
+}
+
+.navbar{
+    width: 65vw;
+    height: 12vh;
+    float: right;
+    clear: right;
+    overflow: hidden;
+    margin-right: 10vw;
+}
+
+.navbar a{
+    float: left;
+    margin: 2vw;
+    text-decoration: none;
+    text-align: center;
+    font: 1vw Montserrat, sans-serif;
+    color: gray;
+    font-stretch: extra-condensed;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownSearch{
+    float: right;
+    overflow: hidden;
+}
+
+.dropbtn{
+    font: 1vw Montserrat, sans-serif;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(252, 252, 252);
+    z-index: 1;
+    border: 2px solid rgb(240, 240, 240);
+    top: 8vh;
+    margin-left: 2vw;
+}
+
+.dropdown-content a{
+    float: none;
+    display: block;
+    font: 1vw Montserrat, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    width: 14.5vw;
+    margin-right: 0;
+    margin-bottom: 0.25vw;
+    margin-top: 0.25vw;
+    margin-left: 2.5vw;
+}
+
+/*
+.searchInputBox{
+    position: absolute;
+    display: flex;
+    width: 20vw;
+    height: 10.4vh;
+    left: -20vw;
+    border: 2px solid rgb(240, 240, 240);
+}
+
+#searchBox{
+    float: left;
+    height: 7vh;
+    width: 12vw;
+    margin-top: 1.5vh;
+    margin-left: .9vw;
+    background-color: rgb(253, 251, 251);
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.searchButton{
+    float: right;
+    height: 7.6vh;
+    width: 5.5vw;
+    margin-top: 1.5vh;
+    margin-left: .5vw;
+    text-align: center;
+    background-color: rgb(150, 41, 223);
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.searchButton a{
+    margin-left: 0;
+    color: white;
+}
+*/
+
+.searchInputBox{
+    position: absolute;
+    display: flex;
+    width: 310px;
+    height: 75px;
+    left: -20vw;
+    border: 2px solid rgb(240, 240, 240);
+}
+
+#searchBox{
+    float: left;
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(253, 251, 251);
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.searchButton{
+    float: right;
+    height: 54px;
+    width: 75px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: rgb(150, 41, 223);
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.searchButton a{
+    margin-left: 0;
+    color: white;
+}
+
+.HamMenuNavbar{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 12vh;
+    padding: 0;
+    margin: 0;
+}
+
+.iconHamMenu{
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 48px;
+    margin-right: 3vw;
+    margin-top: 2vh;
+}
+
+#drawer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 12vh;
+    left: 0;
+    height: 30vh;
+    width: 100%;
+    transition: left ease-out 1s;
+}
+
+#drawer a{
+    display: block;
+    padding-left: 6vw;
+    font-stretch: extra-condensed;
+    font: 14px Montserrat, sans-serif;
+    line-height: 30px;
+    text-decoration: none;
+    color: gray;
+}
+
+#drawer .dropdown-content a{
+    color: white;
+}
+
+.navbar a:hover, .HamMenuNavbar a:hover, .dropdown:hover .dropbtn, #drawer a:hover{
+    color: blue;
+}
+
+.dropdown:hover .dropdown-content, .dropdownSearch:hover .dropdown-content, #drawer:hover .dropdown-content{
+    display: block;
+}

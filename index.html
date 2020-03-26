@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lev3_1_css-vertiefung_float(navigation-shapely-2/6)</title>
+    <link rel="stylesheet" href="assets/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="size(); load()" onresize="resize()">
+    <header>      
+        <nav class="container">
+            <div class="logoBox">
+                <h3>Shapely Demo</h3>
+            </div>
+            <div class="navbar" id="nav">
+                <a href="#home">HOME</a>
+                <a href="#blog">BLOG</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="#about">ABOUT THE TEST</a>
+                        <i class="fa fa-caret-down" style="margin-top: 4vh; margin-left: -0.5vw;"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#imageAlign">Page Image Alignment</a>
+                        <a href="#markupFormat">Page Markup And Formatting</a>
+                        <a href="#clearFloat">Clearing Floats</a>
+                        <a href="#comment">Page with comments</a>
+                        <a href="#commentDisabled">Page with comments disabled</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="#level1">LEVEL1</a>
+                        <i class="fa fa-caret-down" style="margin-top: 4vh; margin-left: -0.5vw;"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#Level2">Level2</a>
+                        <a href="#Level2a">Level2a</a>
+                        <a href="#Level2b">Level2b</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="#shop">SHOP</a>
+                        <i class="fa fa-caret-down" style="margin-top: 4vh; margin-left: -0.5vw;"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#pageA">PAGE A</a>
+                        <a href="#pageB">PAGE B</a>
+                    </div>
+                </div>
+                <div class="dropdownSearch">
+                    <button class="dropbtn">
+                        <a href="#search"><img src="https://img.icons8.com/ios-filled/18/000000/search.png" class="search"></a>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="searchInputBox">
+                            <label for="searchBox"></label>
+                            <input type="text" id="searchBox" name="searchBox">
+                            <button class="searchButton">
+                                <a href="#search">SEARCH</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="HamMenuNavbar" id="hamMenuNav">
+                <a href="javascript:void(0)" class="iconHamMenu" onclick="moveDrawer()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="drawer">
+                    <a href="#home">HOME</a>
+                    <a href="#blog">BLOG</a>
+                    <a href="#portfolio">PORTFOLIO</a>
+                    <a href="#about">ABOUT THE TEST</a>
+                    <a href="#level1">LEVEL1</a>
+                    <a href="#shop">SHOP</a>
+                    <div class="dropdownSearch">
+                        <button class="dropbtn">
+                            <a href="#search"><img src="https://img.icons8.com/ios-filled/16/000000/search.png" class="search"> SITE SEARCH</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="searchInputBox" style="margin-top: 22vh; margin-left: 25vw;">
+                                <label for="searchBox"></label>
+                                <input type="text" id="searchBox" name="searchBox">
+                                <button class="searchButton">
+                                    <a href="#search" style="margin-left: -6vw;">SEARCH</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <script src="assets/index.js"></script>
+
+</body>
+</html>
